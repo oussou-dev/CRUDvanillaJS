@@ -1,2 +1,8 @@
-# CRUDvanillaJS
-Created with CodeSandbox
+## \*\*TodoList with Vanilla.js
+
+```
+Create
+Read
+Uptade
+Delete
+```
