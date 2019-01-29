@@ -39,6 +39,10 @@ body {
 .item {
 	display: flex;
 	justify-content: space-between;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+	padding: 10px 10px 5px 10px;
 }
 .item-icon {
 	font-size: 1.2rem;
