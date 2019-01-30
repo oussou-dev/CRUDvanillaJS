@@ -67,6 +67,15 @@ let handleItem = textValue => {
 	console.log(items)
 	items.forEach(function(item) {
 		if (item.querySelector(".item-name").textContent === textValue) {
+			// complete event listener
+			item
+				.querySelector(".complete-item")
+				.addEventListener("click", function() {
+					item
+						.querySelector(".item-name")
+						.classList.toggle("completed")
+					this.classList.toggle("visibility")
+				})
 		}
 	})
 }
