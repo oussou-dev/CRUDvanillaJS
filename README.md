@@ -2,7 +2,8 @@
 
 ```
 Todo App with Vanilla.js & Local Storage
-###### handling item with callback function
+
+"Handling items with callback function"
 ```
 
 [Demo](https://v39o2zokq3.codesandbox.io/)
@@ -25,14 +26,14 @@ _Note: You may need to add “sudo” in front of any global commands to install
 
 ## Features
 
-|                           |                                 |
-| ------------------------- | ------------------------------- |
-| [ ] Adding Bootstrap 4    | [ ] Alert notifications         |
-| [ ] Setting up todos list | [ ] setItem for localStorage    |
-| [ ] Creating todos        | [ ] removeItem for localStorage |
-| [ ] Deleting todos        | [ ] Deleting todos on api       |
-| [ ] Updating todos        | [ ] Updating todos on api       |
-| [ ] Clearing all todos    | [ ] Adding loading state to app |
+|                           |                                     |
+| ------------------------- | ----------------------------------- |
+| [x] Adding Bootstrap 4    | [x] Alert notifications             |
+| [x] Setting up todos list | [x] setItem for localStorage        |
+| [x] Creating todos        | [x] removeItem for localStorage     |
+| [x] Deleting todos        | [x] Display items from localStorage |
+| [x] Updating todos        | [x] Adding Font Awesome             |
+| [x] Clearing all todos    | [x] Styling app with custom css     |
 
 ## ScreenShots
 
