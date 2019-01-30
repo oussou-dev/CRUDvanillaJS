@@ -62,6 +62,8 @@ let addItem = value => {
 }
 
 // running if submiting
+// seule solution dans un contexte de callback d'avoir la main sur les options liées à un item : edit / remove ...
+// donc à faire pendant la submission de la form => à l'interieur du submit
 let handleItem = textValue => {
 	const items = itemList.querySelectorAll(".item")
 	console.log(items)
@@ -75,6 +77,18 @@ let handleItem = textValue => {
 						.querySelector(".item-name")
 						.classList.toggle("completed")
 					this.classList.toggle("visibility")
+				})
+
+			// edit event listener
+			item
+				.querySelector(".edit-item")
+				.addEventListener("click", function() {
+					itemInput.value = textValue
+					itemList.removeChild(item)
+
+					itemData = itemData.filter(function(item) {
+						return item !== textValue
+					})
 				})
 		}
 	})
