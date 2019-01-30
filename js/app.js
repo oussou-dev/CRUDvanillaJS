@@ -2,7 +2,7 @@
 const itemForm = document.getElementById("itemForm")
 const itemInput = document.getElementById("itemInput")
 const itemList = document.querySelector(".list-item")
-const clearBtn = document.getElementById("clearList")
+const clearBtn = document.getElementById("clear-list")
 const feedback = document.querySelector(".feedback")
 
 let itemData = []
@@ -106,3 +106,13 @@ let handleItem = textValue => {
 		}
 	})
 }
+
+clearBtn.addEventListener("click", function() {
+	itemData = []
+	const items = itemList.querySelectorAll(".item")
+	if (items.length > 0) {
+		items.forEach(function(item) {
+			itemList.removeChild(item)
+		})
+	}
+})
