@@ -2,7 +2,7 @@
 
 ```
 Todo App with Vanilla.js & Local Storage
-handling item with callback function
+###### handling item with callback function
 ```
 
 [Demo](https://v39o2zokq3.codesandbox.io/)
@@ -27,12 +27,12 @@ _Note: You may need to add “sudo” in front of any global commands to install
 
 |                           |                                 |
 | ------------------------- | ------------------------------- |
-| [ ] Adding Bootstrap 4    | [ ] Installing axios            |
+| [ ] Adding Bootstrap 4    | [ ] Alert notifications         |
 | [ ] Setting up todos list | [ ] Creating mock api online    |
 | [ ] Creating todos        | [ ] Creating todos on api       |
 | [ ] Deleting todos        | [ ] Deleting todos on api       |
 | [ ] Updating todos        | [ ] Updating todos on api       |
-| [ ] Alert notifications   | [ ] Adding loading state to app |
+| [ ] Clearing all todos    | [ ] Adding loading state to app |
 
 ## ScreenShots
 

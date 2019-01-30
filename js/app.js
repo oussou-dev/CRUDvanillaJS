@@ -26,7 +26,7 @@ itemForm.addEventListener("submit", e => {
 		// console.log(itemData)
 
 		//=> LOCAL STORAGE
-		//.......
+		localStorage.setItem("list", JSON.stringify(itemData))
 
 		// add events listeners to items
 		// problematique de la selection de l'item et des icons edit / remove ...
@@ -101,6 +101,8 @@ let handleItem = textValue => {
 					itemData = itemData.filter(function(item) {
 						return item !== textValue
 					})
+					//=> update LOCAL STORAGE
+					localStorage.setItem("list", JSON.stringify(itemData))
 					showFeedback("item deleted", "success")
 				})
 		}
@@ -115,4 +117,5 @@ clearBtn.addEventListener("click", function() {
 			itemList.removeChild(item)
 		})
 	}
+	console.log(itemData)
 })
