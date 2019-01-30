@@ -5,7 +5,26 @@ const itemList = document.querySelector(".list-item")
 const clearBtn = document.getElementById("clear-list")
 const feedback = document.querySelector(".feedback")
 
-let itemData = []
+let itemData = JSON.parse(localStorage.getItem("list")) || []
+
+if (itemData.length > 0) {
+	itemData.forEach(function(singleItem) {
+		itemList.insertAdjacentHTML(
+			"beforeend",
+			`
+			<div class="item my-3">
+				<h6 class="item-name text-capitalize">${singleItem}</h6>
+				<div class="item-icons">
+					<a href="#" class="complete-item mx-2 item-icon"><i class="far fa-check-circle"></i></a>
+					<a href="#" class="edit-item mx-2 item-icon"><i class="far fa-edit"></i></a>
+					<a href="#" class="delete-item item-icon"><i class="far fa-times-circle"></i></a>
+				</div>
+			</div>
+		`
+		)
+		handleItem(singleItem)
+	})
+}
 
 // form submission
 itemForm.addEventListener("submit", e => {
@@ -64,7 +83,8 @@ let addItem = value => {
 // running if submiting
 // seule solution dans un contexte de callback d'avoir la main sur les options liées à un item : edit / remove ...
 // donc à faire pendant la submission de la form => à l'interieur du submit
-let handleItem = textValue => {
+function handleItem(textValue) {
+	// let handleItem = textValue => {
 	const items = itemList.querySelectorAll(".item")
 	console.log(items)
 	items.forEach(function(item) {
