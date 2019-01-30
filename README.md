@@ -1,7 +1,8 @@
 ## CRUD App with Vanilla.js
 
 ```
-Todo App with React.js & Local Storage
+Todo App with Vanilla.js & Local Storage
+handling item with callback function
 ```
 
 [Demo](https://v39o2zokq3.codesandbox.io/)

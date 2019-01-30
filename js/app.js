@@ -17,12 +17,26 @@ itemForm.addEventListener("submit", e => {
 	if (!textValue.length) {
 		showFeedback("Please enter valid value", "danger")
 	} else {
+		// add item to the list
 		addItem(textValue)
+		// add to itemData
+		itemData.push(textValue)
+		// clear form
+		itemInput.value = ""
+		// console.log(itemData)
+
+		//=> LOCAL STORAGE
+		//.......
+
+		// add events listeners to items
+		// problematique de la selection de l'item et des icons edit / remove ...
+		// après avoir fait un submit
+		handleItem(textValue)
 	}
 })
 
 // feedback function
-showFeedback = (text, action) => {
+let showFeedback = (text, action) => {
 	// display feedback
 	feedback.classList.add("showItem", `alert-${action}`)
 	feedback.innerHTML = `${text}`
@@ -33,7 +47,7 @@ showFeedback = (text, action) => {
 }
 
 // addItem function
-addItem = value => {
+let addItem = value => {
 	const div = document.createElement("div")
 	div.classList.add("item", "my-3")
 	div.innerHTML = `
@@ -45,4 +59,14 @@ addItem = value => {
 		</div>
 	`
 	itemList.appendChild(div)
+}
+
+// running if submiting
+let handleItem = textValue => {
+	const items = itemList.querySelectorAll(".item")
+	console.log(items)
+	items.forEach(function(item) {
+		if (item.querySelector(".item-name").textContent === textValue) {
+		}
+	})
 }
