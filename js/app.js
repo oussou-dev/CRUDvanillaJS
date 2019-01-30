@@ -111,6 +111,8 @@ let handleItem = textValue => {
 
 clearBtn.addEventListener("click", function() {
 	itemData = []
+	//=> LOCAL STORAGE
+	localStorage.removeItem("list")
 	const items = itemList.querySelectorAll(".item")
 	if (items.length > 0) {
 		items.forEach(function(item) {

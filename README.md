@@ -28,8 +28,8 @@ _Note: You may need to add “sudo” in front of any global commands to install
 |                           |                                 |
 | ------------------------- | ------------------------------- |
 | [ ] Adding Bootstrap 4    | [ ] Alert notifications         |
-| [ ] Setting up todos list | [ ] Creating mock api online    |
-| [ ] Creating todos        | [ ] Creating todos on api       |
+| [ ] Setting up todos list | [ ] setItem for localStorage    |
+| [ ] Creating todos        | [ ] removeItem for localStorage |
 | [ ] Deleting todos        | [ ] Deleting todos on api       |
 | [ ] Updating todos        | [ ] Updating todos on api       |
 | [ ] Clearing all todos    | [ ] Adding loading state to app |
