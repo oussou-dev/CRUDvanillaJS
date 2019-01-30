@@ -83,12 +83,25 @@ let handleItem = textValue => {
 			item
 				.querySelector(".edit-item")
 				.addEventListener("click", function() {
+					// le contenu de l'item à éditer est inséré dans l'input
 					itemInput.value = textValue
+					// on retire l'item à editer du DOM => de la liste des items affichés
 					itemList.removeChild(item)
-
+					// on display les autres items => !== de l'item à editer
 					itemData = itemData.filter(function(item) {
 						return item !== textValue
 					})
+				})
+
+			// delete event listener
+			item
+				.querySelector(".delete-item")
+				.addEventListener("click", function() {
+					itemList.removeChild(item)
+					itemData = itemData.filter(function(item) {
+						return item !== textValue
+					})
+					showFeedback("item deleted", "success")
 				})
 		}
 	})
