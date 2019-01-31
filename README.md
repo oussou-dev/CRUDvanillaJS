@@ -3,7 +3,7 @@
 ```
 Todo App with Vanilla.js & Local Storage
 
-"Handling items with callback function"
+<<- by handling items with callback function ->>
 ```
 
 [Demo](https://v39o2zokq3.codesandbox.io/)
