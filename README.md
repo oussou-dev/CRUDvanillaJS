@@ -12,7 +12,7 @@ Todo App with Vanilla.js & Local Storage
 
 - [Getting Started](#getting-started)
 - [Features](#features)
-- [ScreenShots](#screenshots)
+- [ScreenCast](#screencast)
 
 ## Getting Started
 
@@ -37,4 +37,4 @@ _Note: You may need to add “sudo” in front of any global commands to install
 
 #### ScreenCast
 
-![index_page](https://github.com/oussou-dev/CRUDapp/blob/master/img/screencast.gif)
+![index_page](https://github.com/oussou-dev/CRUDvanillaJS/blob/master/img/screencast.gif)
