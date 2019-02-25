@@ -35,8 +35,6 @@ _Note: You may need to add “sudo” in front of any global commands to install
 | [x] Updating todos        | [x] Adding Font Awesome             |
 | [x] Clearing all todos    | [x] Styling app with custom css     |
 
-## ScreenShots
+#### ScreenCast
 
-| ![Screenshot1](https://github.com/oussou-dev/CRUDapp/blob/master/sc-1.png) | ![Screenshot2](https://github.com/oussou-dev/CRUDapp/blob/master/sc-2.png) | ![Screenshot3](https://github.com/oussou-dev/CRUDapp/blob/master/sc-3.png) |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-|                                                                            |                                                                            |                                                                            |
+![index_page](https://github.com/oussou-dev/CRUDapp/blob/master/img/screencast.gif)
