@@ -35,6 +35,6 @@ _Note: You may need to add “sudo” in front of any global commands to install
 | [x] Updating todos        | [x] Adding Font Awesome             |
 | [x] Clearing all todos    | [x] Styling app with custom css     |
 
-#### ScreenCast
+## ScreenCast
 
 ![index_page](https://github.com/oussou-dev/CRUDvanillaJS/blob/master/img/screencast.gif)
